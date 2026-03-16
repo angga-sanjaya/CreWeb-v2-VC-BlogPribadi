@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Pribadi - Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">📝 MyBlog</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#beranda" class="nav-link active">BERANDA</a></li>
+                <li class="nav-item"><a href="#pendidikan" class="nav-link">PENDIDIKAN</a></li>
+                <li class="nav-item"><a href="#bakat" class="nav-link">BAKAT</a></li>
+                <li class="nav-item"><a href="#pengalaman" class="nav-link">PENGALAMAN</a></li>
+                <li class="nav-item"><a href="#kontak" class="nav-link">KONTAK</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang di Blog Saya! 👋</h1>
+            <p class="hero-subtitle">Berbagi pengetahuan, pengalaman, dan kisah inspiratif</p>
+            <button class="btn-primary" onclick="document.getElementById('pendidikan').scrollIntoView({behavior:'smooth'})">Explore</button>
+        </div>
+    </section>
+
+    <!-- PENDIDIKAN SECTION -->
+    <section id="pendidikan" class="section">
+        <div class="container">
+            <h2 class="section-title">📚 Pendidikan</h2>
+            <div class="cards-grid">
+                <div class="card card-blue">
+                    <div class="card-icon">🎓</div>
+                    <h3>Sekolah Menengah Keatas</h3>
+                    <p>Tamat SMK dengan prestasi akademik yang gemilang dan aktif dalam berbagai kegiatan ekstrakurikuler</p>
+                </div>
+                <div class="card card-purple">
+                    <div class="card-icon">💻</div>
+                    <h3>Kuliah S1 - Sistem Informasi</h3>
+                    <p>Sedang menempuh pendidikan tinggi dengan fokus pada web development dan software engineering</p>
+                </div>
+                <div class="card card-pink">
+                    <div class="card-icon">🏆</div>
+                    <h3>Sertifikasi & Kursus</h3>
+                    <p>Menyelesaikan berbagai kursus online untuk meningkatkan skill di bidang IT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAKAT SECTION -->
+    <section id="bakat" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">⭐ Bakat & Skill</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <div class="skill-header">Web Development</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">UI/UX Design</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                    <p>Figma, Adobe XD</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">PHP & Database</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                    <p>MySQL, PostgreSQL</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-header">Problem Solving</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <p>Algorithm & Logic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGALAMAN SECTION -->
+    <section id="pengalaman" class="section">
+        <div class="container">
+            <h2 class="section-title">💼 Pengalaman</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Sekarang</span>
+                        <h3>Freelancer Web Developer</h3>
+                        <p>Membuat website untuk berbagai klien dengan fokus pada desain responsif dan user experience yang baik</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Magang - PT Digital Solutions</h3>
+                        <p>Belajar best practices dalam development dan berkontribusi pada proyek-proyek web</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Self-Learning & Side Projects</h3>
+                        <p>Mengembangkan skill programming melalui online courses dan membuat portfolio projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">📧 Hubungi Saya</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Nama Anda" required>
+                    <input type="email" placeholder="Email Anda" required>
+                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 812 3456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@myblog.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <div>
+                            <h4>Social Media</h4>
+                            <p>@myblog_official</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Personal Blog. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">𝕏</a>
+                <a href="#" class="social-icon">in</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
